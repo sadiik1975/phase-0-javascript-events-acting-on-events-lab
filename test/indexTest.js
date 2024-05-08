@@ -6,7 +6,7 @@ describe('moveDodgerLeft()', () => {
   })
 
   it('moves the DODGER to the left', () => {
-    let left = dodger.style.left
+    let left = dodger.style.left || 100
     left = parseInt(left)
 
     moveDodgerLeft()
